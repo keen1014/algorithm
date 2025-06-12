@@ -42,6 +42,7 @@ while outline:
             continue
         elif vis_sea[y][x]!=0 and board[y][x]!=tmp[2]:
             m.append(vis_sea[tmp[0]][tmp[1]]+vis_sea[y][x])
+            break
         else:
             vis_sea[y][x]=vis_sea[tmp[0]][tmp[1]]+1
             board[y][x]=tmp[2]
