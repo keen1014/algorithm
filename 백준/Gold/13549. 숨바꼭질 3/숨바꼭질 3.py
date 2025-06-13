@@ -1,14 +1,11 @@
 import sys
 from collections import deque
 input=sys.stdin.readline
-dq=deque([])
-dq0=deque([])
 N, K=map(int, input().strip().split())
 board=[-1 for i in range(100001)]
-cnt=0
 dx=[-1, 1]
-dq.append([N, cnt])
-board[N]=cnt
+dq=deque([[N, 0]])
+board[N]=0
 while dq:
     if board[K]!=-1:
         print(board[K])
