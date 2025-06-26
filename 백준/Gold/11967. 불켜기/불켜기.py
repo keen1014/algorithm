@@ -37,4 +37,5 @@ while dq:
             continue
         dq.append([y,x])
         vis[y][x]=1
+
 print(cnt)
