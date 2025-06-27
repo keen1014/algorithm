@@ -35,7 +35,7 @@ while True:
                 continue
             vis[hj][x]=cnt
             dq.append(x)        
-        if vis[hj][target]!=-1 and cnt>=vis[hj][target]:
+        if vis[hj][target]!=-1:
             print(cnt)
             exit()
     else:
