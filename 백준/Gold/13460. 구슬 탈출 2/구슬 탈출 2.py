@@ -65,4 +65,5 @@ while dq:
                 continue
             dq.append([rly,rlx])
             dq.append([bly,blx])
+            vis.append((rly,rlx,bly,blx))
 print(-1)
