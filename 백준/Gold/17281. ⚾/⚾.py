@@ -26,7 +26,7 @@ def playininning():
             if 9<=now:
                 now=0
 
-        answer.append(ans)
+        answer.add(ans)
         
 def backtracking(n):
     if n == 9:
@@ -51,7 +51,7 @@ input=sys.stdin.readline
 N=int(input().strip())
 li=[0]*9
 vis=[False]*9
-answer=[]
+answer=set()
 inning=[list(map(int, input().strip().split())) for i in range(N)]
 # print(*inning, sep='\n')
 backtracking(0)
