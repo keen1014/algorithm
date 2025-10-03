@@ -12,7 +12,7 @@ def solution(msg):
                 z=j-1
                 break
             elif msg[z:j] in dic.keys() and j==len(msg):
-                answer.append(dic[msg[z:j]])
+                answer.append(dic[msg[z:j+1]])
                 return answer
         else:
             z+=1
