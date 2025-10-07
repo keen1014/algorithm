@@ -36,7 +36,7 @@ def solution(files):
 #                 # print(answer)
 #                 break
                 
-    answer.sort(key=lambda x: (''.join(x[0]).upper(), int(x[1]), x[-1]))
+    answer.sort(key=lambda x: (''.join(x[0]).upper(), int(x[1])))
     
     for i in range(len(answer)):
         answer[i]=''.join(answer[i][:-1])
